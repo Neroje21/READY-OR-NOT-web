@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: red;
+    border-color: red;
+    transform: translateX(-5px); /* Šipka cukne doleva */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+
+.main-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 8px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    align-items: center;
+    min-height: 0;
+}
+
+.info-column {
+    width: 40%;
+}
+
+.description-box {
+    border: 1px solid white;
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table td {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.stats-table td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image-column {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-placeholder {
+    width: 100%;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.img-placeholder:hover img {
+    transform: scale(1.03);
+}
+
+.attachments-section {
+    flex-shrink: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.attachments-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 8px;
+}
+
+.attachments-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.attachments-grid img {
+    flex: 1;
+    height: 80px;
+    border: 1px solid white;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.attachments-grid img:hover {
+    border-color: red;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
