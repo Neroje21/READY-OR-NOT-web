@@ -143,9 +143,11 @@ body {
 
 .attachments-grid img {
     flex: 1;
-    height: 80px;
+    height: 100px;
+    min-width: 0; 
     border: 1px solid white;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.03);
     transition: all 0.3s ease;
     cursor: pointer;
 }

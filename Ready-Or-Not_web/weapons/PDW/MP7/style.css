@@ -144,8 +144,9 @@ body {
 .attachments-grid img {
     flex: 1;
     height: 80px;
+    min-width: 0;
     border: 1px solid white;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -155,3 +156,4 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
 }
+
