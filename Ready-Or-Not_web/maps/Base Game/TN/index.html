@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">&larr;</a>
+    <section id="mission-info" class="section">
+        <div class="backround">
+            <img src="../../../IMG/thumbnails/213_Park_preview.webp" alt="thumbnail">
+            <div class="container">
+                <div class="map">
+                    <h1 class="map-title">Twisted Nerve / 213 Park Homes</h1>
+                    <p>213 Park Homes mission in Ready or Not.</p>
+                    <div class="tables-container">
+                        <table class="objectives-table">
+                            <thead>
+                                <tr>
+                                    <th>Hard Objectives</th>
+                                    <th>Soft Objectives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ul class="obj-list">
+                                            <li>Bring order to chaos</li>
+                                            <li>Rescue all civilians</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="obj-list">
+                                            <li>Report elements</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="objectives-table">
+                            <thead>
+                                <tr>
+                                    <th>Suspects</th>
+                                    <th>Civilians</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8 - 10</td>
+                                    <td>2 - 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="objectives-table">
+                            <thead>
+                                <tr>
+                                    <th>Difficulty</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Medium</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="objectives-table">
+                            <thead>
+                                <tr>
+                                    <th>Behaviour of Suspects</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Will shoot at sight</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span id="arrow-down" class="scroll-arrow">&#8964;</span>
+    </section>
+
+    <section id="mission-layout" class="section">
+        <span id="arrow-up" class="scroll-arrow arrow-up">&#8963;</span>
+        <div class="layout-content">
+            <h1 class="layout-title">Map Layout</h1>
+            <img src="../../../IMG/layouts/213_park_ground.png" alt="layout">
+        </div>
+    </section>
+
+    <script>
+        const arrowDown = document.getElementById('arrow-down');
+        const arrowUp = document.getElementById('arrow-up');
+        const section2 = document.getElementById('mission-layout');
+
+        window.addEventListener('scroll', () => {
+            const inSection2 = window.scrollY >= section2.offsetTop - 50;
+
+            // Down arrow: visible only when at top
+            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
+            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
+
+            // Up arrow: visible only in section 2
+            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
+            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
+        });
+
+        arrowDown.addEventListener('click', () => {
+            section2.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        arrowUp.addEventListener('click', () => {
+            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
