@@ -1,20 +1,31 @@
-h1 {
-    color: #ffffff;
-    font-size: 4.5rem;
-    margin: 60px auto 20px auto;
-    width: fit-content;
-    text-align: center;
-    font-family: 'Segoe UI', 'Arial', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-    border-radius: 12px;
-    padding: 15px 40px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Segoe UI', 'Arial', sans-serif; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 img {
@@ -27,14 +38,27 @@ img {
     z-index: -1;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+h1 {
+    color: #ffffff;
+    font-size: 4.5rem;
+    margin: 60px auto 20px auto;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 12px;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
 }
 
-ul {
+.main-menu {
     margin: 30px auto 0;
     padding: 10px 30px;
     list-style: none;
@@ -48,6 +72,8 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInDown 0.8s ease-out forwards;
 }
 
 li {
@@ -60,10 +86,11 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-
+    font-weight: 500;
     display: inline-block;
     padding: 15px 20px;
     position: relative;
+    transition: color 0.3s;
 }
 
 a:after {
@@ -74,7 +101,7 @@ a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #e3000f;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -84,8 +111,69 @@ a:hover:after {
     left: 0;
 }
 
+ul.dropdown, ul.dropdown-submenu {
+    list-style: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 220px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+ul.dropdown {
+    top: 100%;
+    left: 0;
+    transform: translateY(15px);
+}
+
+ul.dropdown-submenu {
+    top: 0;
+    left: 100%; 
+    transform: translateX(15px);
+    margin-left: 5px;
+}
+
+li:hover > ul.dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+li:hover > ul.dropdown-submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+ul.dropdown li, ul.dropdown-submenu li {
+    padding: 0;
+}
+
+ul.dropdown a, ul.dropdown-submenu a {
+    padding: 12px 20px;
+    display: block;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+ul.dropdown a:hover, ul.dropdown-submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e3000f; 
+}
+
+ul.dropdown a:after, ul.dropdown-submenu a:after {
+    display: none; 
+}
+
 @media screen and (max-height: 300px) {
-    ul {
+    .main-menu {
         margin-top: 40px;
     }
 }
