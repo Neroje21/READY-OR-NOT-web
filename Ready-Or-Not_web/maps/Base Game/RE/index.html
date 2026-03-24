@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,11 @@
             <div class="container">
                 <div class="map">
                     <h1 class="map-title">Relapse / Coastal Medical Center</h1>
-                    <p>Coastal Medical Center mission in Ready or Not.</p>
+                    <p>Relapse is the penultimate and seventeenth mission in Ready or Not. The mission takes place on
+                        May 8, 2025, as the third mission chronologically about 3 weeks after Neon Tomb. A leader of The
+                        Hand who took part in the shooting at the Neon Nightclub is taken into medical care. The group
+                        storms the Coastal Grove Medical Center in an attempt to prevent the suspect from being taken
+                        into police custody. The LSPD's SWAT team is deployed to intercept the cell.</p>
                     <div class="tables-container">
                         <table class="objectives-table">
                             <thead>
@@ -34,11 +39,13 @@
                                         <ul class="obj-list">
                                             <li>Bring order to chaos</li>
                                             <li>Rescue all civilians</li>
+                                            <li>Defuse the Bomb threats</li>
+                                            <li>Arrest Zahir Asadullah</li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul class="obj-list">
-                                            <li>Report elements</li>
+                                            <li>no soft objectives, you're lucky</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -53,8 +60,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>8 - 10</td>
-                                    <td>2 - 3</td>
+                                    <td>15 - 18</td>
+                                    <td>11 - 12</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -66,7 +73,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Medium</td>
+                                    <td>Hard</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,31 +104,6 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
-
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>

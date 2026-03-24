@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -56,8 +57,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>5 - 6</td>
-                                    <td>4 - 5</td>
+                                    <td>13 - 15</td>
+                                    <td>2 - 3</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -69,7 +70,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Very Easy</td>
+                                    <td>Hard</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -81,7 +82,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Will probably shoot at sight</td>
+                                    <td>Will probably shoot at sight, tight spaces</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -100,34 +101,7 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
 
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>
-
-
-

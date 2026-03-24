@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,10 @@
             <div class="container">
                 <div class="map">
                     <h1 class="map-title">Sins of the Father / Clemente Hotel</h1>
-                    <p>Clemente Hotel mission in Ready or Not.</p>
+                    <p>Sins of The Father is the thirteenth mission in Ready or Not. On October 2, 2025, rogue Secret
+                        Service agents sympathetic to the plight of The Left Behind, have occupied the fourteenth floor
+                        of the Clemente Hotel, threatening to execute Senator Fremont's family on video. D Platoon is
+                        dispatched to neutralize the terrorists before they can carry out their threat.</p>
                     <div class="tables-container">
                         <table class="objectives-table">
                             <thead>
@@ -38,7 +42,7 @@
                                     </td>
                                     <td>
                                         <ul class="obj-list">
-                                            <li>Report elements</li>
+                                            <li>no soft objectives, you're lucky</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -53,8 +57,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>8 - 10</td>
-                                    <td>2 - 3</td>
+                                    <td>10 - 13</td>
+                                    <td>4 - 8</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,31 +101,6 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
-
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>

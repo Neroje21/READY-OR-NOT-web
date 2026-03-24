@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <a href="../index.html" class="back-btn">&larr;</a>
     <section id="mission-info" class="section">
         <div class="backround">
-            <img src="4U_Gas_Station_preview.png" alt="thumbnail">
+            <img src="../../../IMG/thumbnails/4U_Gas_Station_preview.png" alt="thumbnail">
             <div class="container">
                 <div class="map">
                     <h1 class="map-title">Thank you, Come again / 4U Gas Station</h1>
@@ -97,35 +98,10 @@
         <span id="arrow-up" class="scroll-arrow arrow-up">&#8963;</span>
         <div class="layout-content">
             <h1 class="layout-title">Map Layout</h1>
-            <img src="4U-gas-station.png" alt="layout">
+            <img src="../../../IMG/layouts/4U-gas-station.png" alt="layout">
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
-
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,8 +19,13 @@
             <img src="../../../IMG/thumbnails/ceasars_cars_dealership_preview.webp" alt="thumbnail">
             <div class="container">
                 <div class="map">
-                    <h1 class="map-title">Buy Cheap, Buy Twice / Caesar's Cars Dealership</h1>
-                    <p>Caesar's Cars Dealership mission in Ready or Not.</p>
+                    <h1 class="map-title">Buy Cheap, Buy Twice / Caesar's Cars Dealership </h1>
+                    <p>Buy Cheap, Buy Twice is the fifteenth playable mission in Ready or Not. It takes place on
+                        February 10, 2026 at a rather large car dealership beside an extremely run down street, in which
+                        both Los Locos and the Russian Mafia have made a base for themselves. The map consists of three
+                        main areas ; The interior of the two-floor dealership, the car lot outside, and the mechanic
+                        shop behind the dealership. Enemies can be found in any of these. A few civilians are also
+                        present.</p>
                     <div class="tables-container">
                         <table class="objectives-table">
                             <thead>
@@ -34,11 +40,13 @@
                                         <ul class="obj-list">
                                             <li>Bring order to chaos</li>
                                             <li>Rescue all civilians</li>
+                                            <li>Locate undercover officer</li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul class="obj-list">
-                                            <li>Report elements</li>
+                                            <li>Report Trafficking Records</li>
+                                            <li>Report contraband in storage</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -53,8 +61,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>8 - 10</td>
-                                    <td>2 - 3</td>
+                                    <td>15 - 17</td>
+                                    <td>0 - 7</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,31 +105,7 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
 
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>

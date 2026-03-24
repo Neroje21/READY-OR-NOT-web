@@ -28,16 +28,7 @@ body {
     text-decoration: none;
     animation: bounce 1.5s ease-in-out infinite;
     opacity: 0.7;
-    transition: opacity 0.4s ease, color 0.2s ease;
-    line-height: 1;
     z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-
-.arrow-up {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .backround {
@@ -47,47 +38,25 @@ body {
     justify-content: space-between;
     padding: 140px 80px 40px 80px;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
+
+    min-height: 100vh;
+    width: 100%;
 }
 
 img {
     border: 1px solid white;
-    width: 46vw;
-    max-width: 900px;
+    width: 45%;
+    max-width: 700px;
     height: auto;
     object-fit: contain;
-    z-index: 10;
-    margin-left: 75px;
-}
-
-.back-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 5px 15px;
-    color: white;
-    text-decoration: none;
-    z-index: 10;
-    transition: all 0.3s ease;
-}
-
-.back-btn:hover {
-    background-color: red;
-    border-color: red;
-    transform: translateX(-5px);
-    /* Šipka cukne doleva */
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    margin-left: 40px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 45vw;
+    max-width: 50%;
+    flex: 1;
 }
 
 h1.map-title {
@@ -95,7 +64,6 @@ h1.map-title {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    border: none;
     border-bottom: 3px solid red;
     color: white;
     font-size: 2.5rem;
@@ -103,16 +71,12 @@ h1.map-title {
     padding: 15px 40px;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 20;
-    text-align: center;
-    white-space: nowrap;
 }
 
 .map {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     width: 100%;
 }
 
@@ -123,22 +87,18 @@ p {
     margin: 0 0 30px 0;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.4);
-    line-height: 1.5;
 }
 
 .tables-container {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    gap: 30px;
-}
-
-.tables-container .objectives-table:nth-child(4) th,
-.tables-container .objectives-table:nth-child(4) td {
-    text-align: center;
-    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
 
 .objectives-table {
+    flex: 1 1 280px;
+    min-width: 260px;
     border-collapse: collapse;
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -147,8 +107,7 @@ p {
 .objectives-table th,
 .objectives-table td {
     border: 1px solid white;
-    padding: 10px 20px;
-    vertical-align: top;
+    padding: 10px 15px;
 }
 
 .objectives-table th {
@@ -168,8 +127,7 @@ p {
 
 .section {
     min-height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .section:not(:last-child) {
@@ -181,10 +139,9 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
     color: white;
-    position: relative;
 }
+
 
 .layout-content {
     display: flex;
@@ -193,27 +150,16 @@ p {
     width: 100%;
 }
 
-h1.layout-title {
-    border: none;
-    border-bottom: 3px solid red;
-    color: white;
-    font-size: 2.5rem;
-    margin: 0 0 40px 0;
-    padding: 15px 40px;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 20;
-    text-align: center;
-    white-space: nowrap;
-}
+@media (max-width: 900px) {
+    .backround {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px 40px 20px;
+    }
 
-#mission-layout img {
-    width: 85%;
-    max-width: 1000px;
-    height: auto;
-    object-fit: contain;
-    border: none;
-    margin-top: 0;
-    margin-left: 0;
-    transform: translateX(-20px);
-    border: 1px solid white;
+    .container,
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
 }

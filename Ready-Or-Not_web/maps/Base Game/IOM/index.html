@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -37,14 +38,16 @@
                                         <ul class="obj-list">
                                             <li>Bring order to chaos</li>
                                             <li>Rescue all civilians</li>
-                                            <li>Arrest Micheal</li>
+                                            <li>Arrest 3 suspects</li>
+                                            <li>locate sniper rifle in room 1204</li>
+                                            <li>locate sniper rifle in room 1201</li>
+                                            <li>locate music producer</li>
+                                            <li>find the retired navy officer</li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul class="obj-list">
-                                            <li>Report Illegal Server Farm</li>
-                                            <li>Report Suspect's PC</li>
-                                            <li>Report Photographic Evidence</li>
+                                            <li>no soft objectives, you're lucky</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -60,7 +63,7 @@
                             <tbody>
                                 <tr>
                                     <td>8 - 10</td>
-                                    <td>2 - 3</td>
+                                    <td>1 - 3</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -72,7 +75,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Easy</td>
+                                    <td>Medium</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -103,34 +106,6 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
-
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>
-
-
-

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,12 @@
             <div class="container">
                 <div class="map">
                     <h1 class="map-title">Valley of the Dolls / Voll Health House</h1>
-                    <p>Voll Health House mission in Ready or Not.</p>
+                    <p>Valley of the Dolls is the tenth playable mission in Ready or Not. The LSPD's cyber-crime team
+                        has found a lead pertaining to the person profiting from the illegal child-pornography ring
+                        operating in Los Sueños. Amos Voll owns a health house at 1962 Irwin Drive, Los Clemente, which
+                        is guarded by the security company, Bolton Security. With Amos's daughter, Janey Voll, having
+                        her 18th birthday, the LSPD decide to raid the home. This level takes place on January 5, 2026,
+                        making it the sixteenth mission chronologically.</p>
                     <div class="tables-container">
                         <table class="objectives-table">
                             <thead>
@@ -34,11 +40,14 @@
                                         <ul class="obj-list">
                                             <li>Bring order to chaos</li>
                                             <li>Rescue all civilians</li>
+                                            <li>Locate Voll's office computer</li>
+                                            <li>Arrest Amos Voll</li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul class="obj-list">
-                                            <li>Report elements</li>
+                                            <li>Report Prohibited Video Tapes of Minors</li>
+                                            <li>Report Prohibited Images of Minors</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -53,8 +62,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>8 - 10</td>
-                                    <td>2 - 3</td>
+                                    <td>13 - 14</td>
+                                    <td>8 - 9</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,31 +106,6 @@
         </div>
     </section>
 
-    <script>
-        const arrowDown = document.getElementById('arrow-down');
-        const arrowUp = document.getElementById('arrow-up');
-        const section2 = document.getElementById('mission-layout');
-
-        window.addEventListener('scroll', () => {
-            const inSection2 = window.scrollY >= section2.offsetTop - 50;
-
-            // Down arrow: visible only when at top
-            arrowDown.style.opacity = inSection2 ? '0' : '0.7';
-            arrowDown.style.pointerEvents = inSection2 ? 'none' : 'auto';
-
-            // Up arrow: visible only in section 2
-            arrowUp.style.opacity = inSection2 ? '0.7' : '0';
-            arrowUp.style.pointerEvents = inSection2 ? 'auto' : 'none';
-        });
-
-        arrowDown.addEventListener('click', () => {
-            section2.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        arrowUp.addEventListener('click', () => {
-            document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
 </body>
 
 </html>
