@@ -20,3 +20,23 @@ arrowDown.addEventListener('click', () => {
 arrowUp.addEventListener('click', () => {
     document.getElementById('mission-info').scrollIntoView({ behavior: 'smooth' });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const img = document.getElementById("layout-img");
+    const btn = document.getElementById("next-layout");
+
+    if (!img || !btn) return;
+
+    const layouts = [
+        "../../../IMG/layouts/23_mb_ground.png",
+        "../../../IMG/layouts/23_mb_floor1.png",
+        "../../../IMG/layouts/23_mb_floor2.png",
+    ];
+
+    let currentIndex = 0;
+
+    btn.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % layouts.length;
+        img.src = layouts[currentIndex];
+    });
+});

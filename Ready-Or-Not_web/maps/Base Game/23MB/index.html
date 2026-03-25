@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <a href="../index.html" class="back-btn">&larr;</a>
+    <a href="../../main/index.html" class="back-btn">&larr;</a>
     <section id="mission-info" class="section">
         <div class="backround">
             <img src="../../../IMG/thumbnails/23_Megabytes_a_Second_preview.webp" alt="thumbnail">
@@ -96,9 +96,14 @@
 
     <section id="mission-layout" class="section">
         <span id="arrow-up" class="scroll-arrow arrow-up">&#8963;</span>
+
         <div class="layout-content">
             <h1 class="layout-title">Map Layout</h1>
-            <img src="../../../IMG/layouts/23_mb_ground.png" alt="layout">
+
+            <div class="layout-wrapper">
+                <img id="layout-img" src="../../../IMG/layouts/23_mb_ground.png" alt="layout">
+                <button type="button" id="next-layout" class="layout-arrow">&#8594;</button>
+            </div>
         </div>
     </section>
 
