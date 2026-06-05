@@ -1,79 +1,44 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
-    font-family: 'Segoe UI', 'Arial', sans-serif; 
+    box-sizing: border-box;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+body {
+    background-color: #000;
+    font-family: 'Rajdhani', sans-serif;
+    overflow-x: hidden;
 }
 
-img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
+/* NAVIGACE */
+nav {
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 4.5rem;
-    margin: 60px auto 20px auto;
-    width: fit-content;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-    border-radius: 12px;
-    padding: 15px 40px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    z-index: 100;
+    width: 100%;
 }
 
 .main-menu {
-    margin: 30px auto 0;
-    padding: 10px 30px;
+    margin: 0;
+    padding: 15px 0;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 40px;
-    width: fit-content;
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    animation: fadeInDown 0.8s ease-out forwards;
+    background-color: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
 li {
@@ -101,7 +66,7 @@ a:after {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #e3000f;
+    background: #f80000;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -111,20 +76,21 @@ a:hover:after {
     left: 0;
 }
 
+/* DROPDOWN MENU */
 ul.dropdown, ul.dropdown-submenu {
     list-style: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 8px;
     padding: 10px 0;
     min-width: 220px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
-    z-index: 100;
+    z-index: 150;
 }
 
 ul.dropdown {
@@ -135,7 +101,7 @@ ul.dropdown {
 
 ul.dropdown-submenu {
     top: 0;
-    left: 100%; 
+    left: 100%;
     transform: translateX(15px);
     margin-left: 5px;
 }
@@ -161,15 +127,265 @@ ul.dropdown a, ul.dropdown-submenu a {
     display: block;
     font-size: 0.85rem;
     text-align: left;
+    color: #fff;
 }
 
 ul.dropdown a:hover, ul.dropdown-submenu a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #e3000f; 
+    color: #f80000;
 }
 
 ul.dropdown a:after, ul.dropdown-submenu a:after {
-    display: none; 
+    display: none;
+}
+
+/* HERO SEKCE */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-title {
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-subtitle {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    margin: 30px 0 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.hero-subtitle::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 4px;
+    background: #f80000;
+}
+
+/* FOOTER SEKCE */
+.footer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    padding: 80px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    width: 100%;
+}
+
+.footer-section h3 {
+    color: #f80000;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* SOCIÁLNÍ SÍTĚ */
+.social-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(248, 0, 0, 0.15);
+    border: 2px solid rgba(248, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #f80000;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.social-links a:hover {
+    background-color: #f80000;
+    color: #000;
+    transform: translateY(-5px);
+    border-color: #f80000;
+}
+
+.social-links a:after {
+    display: none !important;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    padding: 12px 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f80000;
+}
+
+/* FOOTER SPODEK */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 40px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 5.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle::after {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu {
+        gap: 20px;
+        padding: 12px 0;
+    }
+
+    a {
+        padding: 12px 15px;
+        font-size: 0.75rem;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        letter-spacing: 0.1em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .hero-subtitle::after {
+        width: 250px;
+        bottom: -30px;
+    }
+
+    .footer {
+        min-height: auto;
+        padding: 60px 20px 40px 20px;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    .hero-subtitle::after {
+        width: 180px;
+        height: 3px;
+    }
+
+    .main-menu {
+        gap: 15px;
+    }
+
+    a {
+        padding: 10px 12px;
+        font-size: 0.65rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p {
+        font-size: 0.85rem;
+    }
 }
 
 @media screen and (max-height: 300px) {
