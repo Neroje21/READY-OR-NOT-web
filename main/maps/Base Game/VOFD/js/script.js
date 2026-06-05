@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/voll_health_house_ground.webp",
-        "../../../IMG/layouts/voll_health_house_floor1.webp",
-        "../../../IMG/layouts/voll_health_house_floor2.webp",
-        "../../../IMG/layouts/voll_health_house_underground.webp",
+        "../../../../../IMG/map/layouts/voll_health_house_ground.webp",
+        "../../../../../IMG/map/layouts/voll_health_house_floor1.webp",
+        "../../../../../IMG/map/layouts/voll_health_house_floor2.webp",
+        "../../../../../IMG/map/layouts/voll_health_house_underground.webp",
     ];
 
     const floorNames = [

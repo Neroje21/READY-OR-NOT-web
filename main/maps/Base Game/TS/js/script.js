@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", () => {
         if (isFirst) {
-            img.src = "../../../IMG/layouts/brixley_talent_floor1.webp";
+            img.src = "../../../../../IMG/map/layouts/brixley_talent_floor1.webp";
         } else {
-            img.src = "../../../IMG/layouts/brixley_talent_ground.webp";
+            img.src = "../../../../../IMG/map/layouts/brixley_talent_ground.webp";
         }
 
         isFirst = !isFirst;

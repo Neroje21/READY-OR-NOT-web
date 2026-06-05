@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');

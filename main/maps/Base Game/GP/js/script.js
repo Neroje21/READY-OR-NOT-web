@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/los_suenos_postal_ground.webp",
-        "../../../IMG/layouts/los_suenos_postal_floor1.webp",
+        "../../../../../IMG/map/layouts/los_suenos_postal_ground.webp",
+        "../../../../../IMG/map/layouts/los_suenos_postal_floor1.webp",
     ];
 
     const floorNames = [

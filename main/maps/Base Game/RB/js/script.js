@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/costa_vino_ground.webp",
-        "../../../IMG/layouts/costa_vino_underground.webp",
+        "../../../../../IMG/map/layouts/costa_vino_ground.webp",
+        "../../../../../IMG/map/layouts/costa_vino_underground.webp",
     ];
 
     const floorNames = [

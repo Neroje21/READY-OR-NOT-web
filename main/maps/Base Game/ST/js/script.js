@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/mindjot_floor1.webp",
-        "../../../IMG/layouts/mindjot_floor2.webp",
-        "../../../IMG/layouts/mindjot_ground.webp",
+        "../../../../../IMG/map/layouts/mindjot_floor1.webp",
+        "../../../../../IMG/map/layouts/mindjot_floor2.webp",
+        "../../../../../IMG/map/layouts/mindjot_ground.webp",
     ];
 
     const floorNames = [

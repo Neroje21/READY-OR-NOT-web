@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/213_park_ground.webp",
-        "../../../IMG/layouts/213_park_underground.webp",
-        "../../../IMG/layouts/213_park_floor1.webp",
-        "../../../IMG/layouts/213_park_floor2.webp",
+        "../../../../../IMG/map/layouts/213_park_ground.webp",
+        "../../../../../IMG/map/layouts/213_park_underground.webp",
+        "../../../../../IMG/map/layouts/213_park_floor1.webp",
+        "../../../../../IMG/map/layouts/213_park_floor2.webp",
     ];
 
     const floorNames = [

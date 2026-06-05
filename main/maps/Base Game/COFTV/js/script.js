@@ -1,4 +1,4 @@
-
+﻿
 const arrowDown = document.getElementById('arrow-down');
 const arrowUp = document.getElementById('arrow-up');
 const section2 = document.getElementById('mission-layout');
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!img || !btn || !floorLabel) return;
 
     const layouts = [
-        "../../../IMG/layouts/cherryessa_farm_ground.webp",
-        "../../../IMG/layouts/cherryessa_farm_floor1.webp",
-        "../../../IMG/layouts/cherryessa_farm_underground.webp",
+        "../../../../../IMG/map/layouts/cherryessa_farm_ground.webp",
+        "../../../../../IMG/map/layouts/cherryessa_farm_floor1.webp",
+        "../../../../../IMG/map/layouts/cherryessa_farm_underground.webp",
     ];
 
     const floorNames = [
