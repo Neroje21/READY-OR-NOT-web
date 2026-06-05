@@ -4,7 +4,8 @@
 **Ready or Not - Guide** je interaktivní webový průvodce pro taktickou střílečku *Ready or Not*. Projekt poskytuje detailní informace o herních mapách, včetně jejich cílů, obtížnosti a taktických nákresů. Cílem je poskytnout hráčům přehledný a esteticky zpracovaný nástroj pro plánování misí.
 
 *   **Téma:** Herní průvodce / Databáze map
-*   **Živý web:** [Odkaz na GitHub Pages](https://tomik.github.io/ready-or-not-guide/) *(Doplňte dle potřeby)*
+*   **Živý web:** [Odkaz na GitHub Pages](https://neroje21.github.io/READY-OR-NOT-web/
+))
 
 ---
 
