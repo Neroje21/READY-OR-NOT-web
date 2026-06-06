@@ -482,6 +482,6 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot otevřeného víceúrovňového menu*
 
 ```
-<img width="2554" height="1290" alt="drop down menu" src="https://github.com/user-attachments/assets/3a5e61b8-130a-454c-9318-abb84d9d3aa2" />
+<img src="https://github.com/user-attachments/assets/3a5e61b8-130a-454c-9318-abb84d9d3aa2" alt="drop down menu" width="800">
 
 ```
