@@ -478,10 +478,11 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 ```
 
 ### Dropdown navigace
-![alt text](<drop down menu.png>)
+![alt text](<img width="2554" height="1290" alt="drop down menu" src="https://github.com/user-attachments/assets/a7428e7a-2245-4e4e-adf8-499fa1a640a5" />
+drop down menu.png)
 > *Screenshot otevřeného víceúrovňového menu*
 
 ```
-![drop down menu](https://github.com/user-attachments/assets/3a5e61b8-130a-454c-9318-abb84d9d3aa2)
+
 
 ```
