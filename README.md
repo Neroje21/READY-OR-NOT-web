@@ -453,7 +453,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 
 ### Stránka zbraně – Desktop
 <img width="3837" height="2397" alt="AWRC" src="https://github.com/user-attachments/assets/d01e7ed9-0849-44b3-ba31-f2d8e2140771" />
-> *Screenshot ARWC s fotografií zbraně a doporučeným loadoutem*
+> *Screenshot ARN s fotografií zbraně a doporučeným loadoutem*
 
 
 ### Dropdown navigace
