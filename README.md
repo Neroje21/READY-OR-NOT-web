@@ -1,5 +1,7 @@
 # Ready or Not – Guide
 
+# Made by Tomáš Linka & Alex Solnař
+
 Neoficiální webový průvodce hrou **Ready or Not** od studia VOID Interactive. Stránka poskytuje přehled všech herních map (Base Game) včetně cílů mise, počtu podezřelých a civilistů a interaktivních plánů pater. Dále obsahuje databázi zbraní s doporučeným loadoutem a statistikami.
 
 **Živý web (GitHub Pages):** https://neroje21.github.io/READY-OR-NOT-web/
