@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neroje21.github.io/READY-OR-NOT-web/sitemap.xml
