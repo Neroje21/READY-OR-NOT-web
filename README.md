@@ -434,7 +434,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 ### Hlavní stránka – Desktop
 <img width="2545" height="1321" alt="main png" src="https://github.com/user-attachments/assets/e5ae339a-e8f6-42fb-8201-c6f5351c0cb7" />
 > *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"
-> 
+
 ```
 [ Desktop screenshot – index.html ]
 Rozlišení: 1920×1080
