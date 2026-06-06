@@ -31,7 +31,7 @@
                             <li><a href="main/maps/Base Game/E/html/index.html">ELEPHANT</a></li>
                             <li><a href="main/maps/Base Game/RB/html/index.html">RUST BELT</a></li>
                             <li><a href="main/maps/Base Game/SOTF/html/index.html">SINS OF THE FATHER</a></li>
-                            <li><a href="main/maps/Base Game/NT/html/index.html">NEON TOMB</a></li>
+                            <li><a href="main/maps/Base Game/NT/html/index.html">NEON THOMB</a></li>
                             <li><a href="main/maps/Base Game/BCBT/html/index.html">BUY CHEAP, BUY TWICE</a></li>
                             <li><a href="main/maps/Base Game/COFTV/html/index.html">CARRIERS OF THE VINE</a></li>
                             <li><a href="main/maps/Base Game/RE/html/index.html">RELAPSE</a></li>
@@ -139,51 +139,69 @@
             <h1 class="hero-title">READY OR NOT</h1>
             <h2 class="hero-subtitle">GUIDE</h2>
         </div>
+        <a class="scroll-indicator" id="scroll-indicator" title="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </div>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Follow void interactive</h3>
+                <h3>Sledujte nás</h3>
                 <div class="social-links">
-                    <a href="https://x.com/VOIDInteractive" target="_blank" title="Twitter">
+                    <a href="https://www.twitter.com" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com/void_interactive/" target="_blank" title="Instagram">
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/c/voidinteractive" target="_blank" title="YouTube">
+                    <a href="https://www.youtube.com" target="_blank" title="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://discord.com/invite/readyornot" target="_blank" title="Discord">
+                    <a href="https://www.discord.com" target="_blank" title="Discord">
                         <i class="fab fa-discord"></i>
                     </a>
-                    <a href="https://www.twitch.tv/directory/category/ready-or-not" target="_blank" title="Twitch">
+                    <a href="https://www.twitch.tv" target="_blank" title="Twitch">
                         <i class="fab fa-twitch"></i>
                     </a>
                 </div>
             </div>
-<div class="footer-section">
-    <h3>Legal information</h3>
-    <ul class="footer-links">
-        <li><a href="#privacy">Privacy Policy</a></li>
-        <li><a href="#terms">Terms of Use</a></li>
-        <li><a href="#cookies">Cookies</a></li>
-        <li><a href="#disclaimer">Disclaimer</a></li>
-    </ul>
-</div>
 
-<div class="footer-section">
-    <h3>About the project</h3>
-    <p>Ready or Not Guide - Unofficial in-game guide. All rights to the game Ready or Not belong to VOID Interactive.</p>
-</div>
-</div>
+            <div class="footer-section">
+                <h3>Právní informace</h3>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Zásady ochrany osobních údajů</a></li>
+                    <li><a href="#terms">Podmínky použití</a></li>
+                    <li><a href="#cookies">Cookies</a></li>
+                    <li><a href="#disclaimer">Zřeknutí se odpovědnosti</a></li>
+                </ul>
+            </div>
 
-<div class="footer-bottom">
-    <p>&copy; 2026 Ready or Not Guide. All rights reserved.</p>
-    <p>Ready or Not is a trademark of VOID Interactive. This website is not officially affiliated with VOID Interactive.</p>
-</div>
-</footer>
+            <div class="footer-section">
+                <h3>O projektu</h3>
+                <p>Ready or Not Guide - Neoficiální průvodce hrou. Všechna práva k hře Ready or Not patří společnosti VOID Interactive.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ready or Not Guide. Všechna práva vyhrazena.</p>
+            <p>Ready or Not je ochranná známka VOID Interactive. Tento web není oficiálně spojen s VOID Interactive.</p>
+        </div>
+    </footer>
+    <script>
+        const indicator = document.getElementById('scroll-indicator');
+        const footer    = document.querySelector('.footer');
+
+        indicator.addEventListener('click', () => {
+            footer.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            const footerVisible = footer.getBoundingClientRect().top <= window.innerHeight;
+            indicator.style.opacity       = footerVisible ? '0' : '1';
+            indicator.style.pointerEvents = footerVisible ? 'none' : 'auto';
+        });
+    </script>
 </body>
 
 </html>
