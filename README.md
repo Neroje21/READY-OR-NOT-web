@@ -435,53 +435,28 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 <img width="2545" height="1321" alt="main png" src="https://github.com/user-attachments/assets/e5ae339a-e8f6-42fb-8201-c6f5351c0cb7" />
 > *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"*
 
-```
-
-
-
-```
 
 ### Hlavní stránka – Mobil
 <img width="461" height="957" alt="mobile png" src="https://github.com/user-attachments/assets/658e89f5-8eb9-4db3-922d-11dbb1c02c00" />
 > *Screenshot mobilního zobrazení s komprimovanou navigací*
 
-```
-
-
-```
 
 ### Stránka mapy – Desktop
 <img width="3705" height="2154" alt="map png" src="https://github.com/user-attachments/assets/2f662f30-b359-4b74-9667-2a08f1435e10" />
 > *Screenshot mise s thumbnailem, tabulkami cílů*
 
-```
-
-
-
-```
 
 ### Stránka mapy – Přepínač pater
 <img width="3837" height="2397" alt="layout" src="https://github.com/user-attachments/assets/68acdde7-0e1e-4a62-be2f-3b0f3dc28f20" />
 > *Screenshot sekce "Map Layout" s půdorysem a tlačítkem →*
 
-```
-
-```
 
 ### Stránka zbraně – Desktop
 <img width="3837" height="2397" alt="AWRC" src="https://github.com/user-attachments/assets/d01e7ed9-0849-44b3-ba31-f2d8e2140771" />
 > *Screenshot ARWC s fotografií zbraně a doporučeným loadoutem*
 
-```
-
-
-```
 
 ### Dropdown navigace
 <img width="2554" height="1290" alt="drop down menu" src="https://github.com/user-attachments/assets/a7428e7a-2245-4e4e-adf8-499fa1a640a5" />
 > *Screenshot otevřeného víceúrovňového menu*
 
-```
-
-
-```
