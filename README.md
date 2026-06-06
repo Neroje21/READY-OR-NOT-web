@@ -433,30 +433,66 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 
 ### Hlavní stránka – Desktop
 <img width="2545" height="1321" alt="main png" src="https://github.com/user-attachments/assets/e5ae339a-e8f6-42fb-8201-c6f5351c0cb7" />
-> *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"*
-
+> *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"
+> 
+``
+[ Desktop screenshot – index.html ]
+Rozlišení: 1920×1080
+Prvky: sticky navigace s dropdown menu, hero titulek "READY OR NOT / GUIDE",
+       červená dekorativní linka, patička se sociálními sítěmi
+``
 
 ### Hlavní stránka – Mobil
 <img width="461" height="957" alt="mobile png" src="https://github.com/user-attachments/assets/658e89f5-8eb9-4db3-922d-11dbb1c02c00" />
 > *Screenshot mobilního zobrazení s komprimovanou navigací*
 
+``
+[ Mobile screenshot – index.html ]
+Rozlišení: 390×844 (iPhone 14)
+Prvky: zmenšená navigace (font 0.65rem), hero titulek 2.5rem,
+       patička ve sloupcovém layoutu
+``
 
 ### Stránka mapy – Desktop
 <img width="3705" height="2154" alt="map png" src="https://github.com/user-attachments/assets/2f662f30-b359-4b74-9667-2a08f1435e10" />
 > *Screenshot mise s thumbnailem, tabulkami cílů*
 
+``
+´[ Desktop screenshot – 23MB/html/index.html ]
+Prvky: back-btn (←), titulek mise, popis, tabulky Hard/Soft Objectives,
+       počty Suspects/Civilians, obtížnost, thumbnail vpravo,
+       scrollovací šipka (↓)
+``
 
 ### Stránka mapy – Přepínač pater
 <img width="3837" height="2397" alt="layout" src="https://github.com/user-attachments/assets/68acdde7-0e1e-4a62-be2f-3b0f3dc28f20" />
 > *Screenshot sekce "Map Layout" s půdorysem a tlačítkem →*
 
+``
+[ Desktop screenshot – layout sekce ]
+Prvky: popisek "Floor 1 / Floor 2 / Floor 3", obrázek půdorysu,
+       tlačítko → pro přepnutí patra, back-btn (←) šipka cukne doleva při hoveru
+``
 
 ### Stránka zbraně – Desktop
 <img width="3837" height="2397" alt="AWRC" src="https://github.com/user-attachments/assets/d01e7ed9-0849-44b3-ba31-f2d8e2140771" />
 > *Screenshot ARN s fotografií zbraně a doporučeným loadoutem*
 
+``
+[ Desktop screenshot – weapons/Assault_Rifle/ARWC/index.html ]
+Prvky: titulek "ARWC" s červenou podtržítko linkou, popis zbraně,
+       tabulka statistik (caliber / RPM / Recoil / Capacity),
+       fotografie zbraně (55% šířky), sekce "Recommended loadout"
+       s ikonami příslušenství (optic, muzzle, grip, other)
+``
 
 ### Dropdown navigace
 <img width="2554" height="1290" alt="drop down menu" src="https://github.com/user-attachments/assets/a7428e7a-2245-4e4e-adf8-499fa1a640a5" />
 > *Screenshot otevřeného víceúrovňového menu*
 
+``
+[ Screenshot navigace ]
+Prvky: hover na "Maps" → otevře dropdown "Base Game" →
+       hover na "Base Game" → otevře submenu se všemi 18 mapami,
+       glassmorphism efekt (backdrop-filter: blur), červený hover highlight
+``
