@@ -432,6 +432,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 ## Galerie
 
 ### Hlavní stránka – Desktop
+![alt text](main.png)
 > *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"*
 
 ```
@@ -442,16 +443,18 @@ Prvky: sticky navigace s dropdown menu, hero titulek "READY OR NOT / GUIDE",
 ```
 
 ### Hlavní stránka – Mobil
+![alt text](mobile.png)
 > *Screenshot mobilního zobrazení s komprimovanou navigací*
 
 ```
-[ Mobil screenshot – index.html ]
+[ Mobile screenshot – index.html ]
 Rozlišení: 390×844 (iPhone 14)
 Prvky: zmenšená navigace (font 0.65rem), hero titulek 2.5rem,
        patička ve sloupcovém layoutu
 ```
 
 ### Stránka mapy – Desktop
+![alt text](map.png)
 > *Screenshot mise s thumbnailem, tabulkami cílů a přepínačem pater*
 
 ```
@@ -462,6 +465,7 @@ Prvky: back-btn (←), titulek mise, popis, tabulky Hard/Soft Objectives,
 ```
 
 ### Stránka mapy – Přepínač pater
+![alt text](<map layout.png>)
 > *Screenshot sekce "Map Layout" s půdorysem a tlačítkem →*
 
 ```
@@ -471,6 +475,7 @@ Prvky: popisek "Floor 1 / Floor 2 / Floor 3", obrázek půdorysu,
 ```
 
 ### Stránka zbraně – Desktop
+![alt text](AWRC.png)
 > *Screenshot ARWC s fotografií zbraně a doporučeným loadoutem*
 
 ```
@@ -482,6 +487,7 @@ Prvky: titulek "ARWC" s červenou podtržítko linkou, popis zbraně,
 ```
 
 ### Dropdown navigace
+![alt text](<drop down menu.png>)
 > *Screenshot otevřeného víceúrovňového menu*
 
 ```
