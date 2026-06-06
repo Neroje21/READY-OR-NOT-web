@@ -436,7 +436,8 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot hero sekce s velkou typografií a červenou linkou pod titulkem "GUIDE"*
 
 ```
-<img width="2545" height="1321" alt="image3" src="https://github.com/user-attachments/assets/afc763da-d889-4407-9dc5-56a4c6b7d2d4" />
+
+
 
 ```
 
@@ -445,7 +446,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot mobilního zobrazení s komprimovanou navigací*
 
 ```
-<img width="461" height="957" alt="image4" src="https://github.com/user-attachments/assets/6e02c253-8d4d-46d5-a051-ad945423b5c5" />
+
 
 ```
 
@@ -455,7 +456,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 
 ```
 
-<img width="3705" height="2154" alt="image2" src="https://github.com/user-attachments/assets/905652c3-41d9-433b-b03f-f9b5129347cb" />
+
 
 ```
 
@@ -464,7 +465,6 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot sekce "Map Layout" s půdorysem a tlačítkem →*
 
 ```
-<img width="3837" height="2397" alt="image5" src="https://github.com/user-attachments/assets/bb080f76-829f-4dce-9b13-1a919420207f" />
 
 ```
 
@@ -473,7 +473,7 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot ARWC s fotografií zbraně a doporučeným loadoutem*
 
 ```
-<img width="3837" height="2397" alt="image6" src="https://github.com/user-attachments/assets/0631f53a-25c7-4e8b-9d22-65a3bf5430a3" />
+
 
 ```
 
@@ -482,6 +482,6 @@ Přehled klíčových promptů použitých při tvorbě projektu a přínos AI a
 > *Screenshot otevřeného víceúrovňového menu*
 
 ```
-<img width="2554" height="1290" alt="image1" src="https://github.com/user-attachments/assets/78307a86-a3ed-4f7e-be26-3921f0991fa4" />
+<img width="2554" height="1290" alt="drop down menu" src="https://github.com/user-attachments/assets/3a5e61b8-130a-454c-9318-abb84d9d3aa2" />
 
 ```
