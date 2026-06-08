@@ -147,48 +147,196 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Sledujte nás</h3>
+                <h3>Follow Void Interactive</h3>
                 <div class="social-links">
-                    <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                    <a href="https://x.com/VOIDInteractive" target="_blank" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <a href="https://www.instagram.com/void_interactive/" target="_blank" title="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                    <a href="https://www.youtube.com/c/voidinteractive" target="_blank" title="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://www.discord.com" target="_blank" title="Discord">
+                    <a href="https://discord.com/invite/readyornot" target="_blank" title="Discord">
                         <i class="fab fa-discord"></i>
                     </a>
-                    <a href="https://www.twitch.tv" target="_blank" title="Twitch">
+                    <a href="https://www.twitch.tv/directory/category/ready-or-not" target="_blank" title="Twitch">
                         <i class="fab fa-twitch"></i>
                     </a>
                 </div>
             </div>
 
             <div class="footer-section">
-                <h3>Právní informace</h3>
+                <h3>Legal Information</h3>
                 <ul class="footer-links">
-                    <li><a href="#privacy">Zásady ochrany osobních údajů</a></li>
-                    <li><a href="#terms">Podmínky použití</a></li>
-                    <li><a href="#cookies">Cookies</a></li>
-                    <li><a href="#disclaimer">Zřeknutí se odpovědnosti</a></li>
+                    <li><a href="#" id="open-privacy">Privacy Policy</a></li>
+                    <li><a href="#" id="open-terms">Terms of Use</a></li>
+                    <li><a href="#" id="open-cookies">Cookies</a></li>
+                    <li><a href="#" id="open-disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
-                <h3>O projektu</h3>
-                <p>Ready or Not Guide - Neoficiální průvodce hrou. Všechna práva k hře Ready or Not patří společnosti VOID Interactive.</p>
+                <h3>About the Project</h3>
+                <p>Ready or Not Guide – Unofficial in-game guide. All rights to the game Ready or Not belong to VOID Interactive.</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Ready or Not Guide. Všechna práva vyhrazena.</p>
-            <p>Ready or Not je ochranná známka VOID Interactive. Tento web není oficiálně spojen s VOID Interactive.</p>
+            <p>&copy; 2026 Ready or Not Guide. All rights reserved.</p>
+            <p>Ready or Not is a trademark of VOID Interactive. This website is not officially affiliated with VOID Interactive.</p>
         </div>
     </footer>
+
+    <!-- TERMS OF USE MODAL -->
+    <div class="modal-overlay" id="modal-terms">
+        <div class="modal-box">
+            <button class="modal-close" id="close-terms" aria-label="Close">&times;</button>
+            <h2>Terms of Use</h2>
+
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing and using this website, you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this site.</p>
+
+            <h3>2. Purpose of the Site</h3>
+            <p>Ready or Not Guide is an unofficial, fan-made reference website created solely for informational and educational purposes. It is not affiliated with, endorsed by, or connected to VOID Interactive in any way.</p>
+
+            <h3>3. Intellectual Property</h3>
+            <p>All game-related content, names, images, and trademarks referenced on this site (including "Ready or Not") are the property of VOID Interactive. The website structure, layout, and original written content are the property of the site author.</p>
+
+            <h3>4. Permitted Use</h3>
+            <p>You may:</p>
+            <ul>
+                <li>Browse and use the content for personal, non-commercial purposes.</li>
+                <li>Share links to this website.</li>
+            </ul>
+            <p>You may not:</p>
+            <ul>
+                <li>Reproduce, copy, or redistribute the website content without prior written permission.</li>
+                <li>Use the content for commercial purposes.</li>
+                <li>Misrepresent this site as an official product of VOID Interactive.</li>
+            </ul>
+
+            <h3>5. Accuracy of Information</h3>
+            <p>We strive to keep all game data accurate and up to date. However, game content may change with patches and updates. We make no guarantees regarding the completeness or accuracy of the information provided.</p>
+
+            <h3>6. Changes to Terms</h3>
+            <p>We reserve the right to modify these Terms of Use at any time. Continued use of the site after changes are posted constitutes acceptance of the updated terms.</p>
+
+            <p class="modal-meta">Last updated: January 2026</p>
+        </div>
+    </div>
+
+    <!-- COOKIES MODAL -->
+    <div class="modal-overlay" id="modal-cookies">
+        <div class="modal-box">
+            <button class="modal-close" id="close-cookies" aria-label="Close">&times;</button>
+            <h2>Cookie Policy</h2>
+
+            <h3>What are Cookies?</h3>
+            <p>Cookies are small text files stored on your device by a website. They are widely used to make websites work more efficiently and to provide information to site owners.</p>
+
+            <h3>Does this Site Use Cookies?</h3>
+            <p>Ready or Not Guide is a static website and does not set any first-party tracking or analytics cookies. We do not use cookies to collect personal data or track your browsing behaviour across other sites.</p>
+
+            <h3>Third-Party Cookies</h3>
+            <p>This site loads resources from the following third-party services, which may set their own cookies:</p>
+            <ul>
+                <li><strong>Google Fonts</strong> – Used to load the Rajdhani typeface. Google may log basic request data. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+                <li><strong>Font Awesome (cdnjs)</strong> – Used for footer icons. Cloudflare may log request metadata. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare Privacy Policy</a>.</li>
+            </ul>
+
+            <h3>Your Choices</h3>
+            <p>You can control and delete cookies through your browser settings. Disabling third-party resources may affect the visual appearance of the site (fonts and icons), but all content will remain accessible.</p>
+
+            <h3>Contact</h3>
+            <p>If you have any questions about this Cookie Policy, please contact us via GitHub.</p>
+
+            <p class="modal-meta">Last updated: January 2026</p>
+        </div>
+    </div>
+    <!-- PRIVACY POLICY MODAL -->
+    <div class="modal-overlay" id="modal-privacy">
+        <div class="modal-box">
+            <button class="modal-close" id="close-privacy" aria-label="Close">&times;</button>
+            <h2>Privacy Policy</h2>
+
+            <h3>1. Introduction</h3>
+            <p>Ready or Not Guide ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains what information may be collected when you visit this website and how it is handled.</p>
+
+            <h3>2. Information We Collect</h3>
+            <p>This is a static, fan-made website. We do not collect, store, or process any personal data directly. We do not operate login systems, contact forms, or analytics platforms.</p>
+            <p>Your browser may store a single entry in <strong>localStorage</strong> to remember your cookie consent choice. This data never leaves your device.</p>
+
+            <h3>3. Third-Party Services</h3>
+            <p>The following third-party services are loaded by this page and may independently collect technical data (e.g. IP address, browser type) as part of serving their resources:</p>
+            <ul>
+                <li><strong>Google Fonts</strong> – Serves the Rajdhani typeface. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+                <li><strong>Font Awesome via cdnjs (Cloudflare)</strong> – Serves icon assets. Subject to <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Cloudflare's Privacy Policy</a>.</li>
+            </ul>
+            <p>We have no access to any data collected by these services and cannot control their use of it.</p>
+
+            <h3>4. Cookies & Local Storage</h3>
+            <p>We do not set tracking, advertising, or analytics cookies. See our <a href="#" id="privacy-open-cookies">Cookie Policy</a> for full details.</p>
+
+            <h3>5. Children's Privacy</h3>
+            <p>This website is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+            <h3>6. Changes to This Policy</h3>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date below.</p>
+
+            <h3>7. Contact</h3>
+            <p>For any privacy-related questions, please reach out via the project's GitHub repository.</p>
+
+            <p class="modal-meta">Last updated: January 2026</p>
+        </div>
+    </div>
+
+    <!-- DISCLAIMER MODAL -->
+    <div class="modal-overlay" id="modal-disclaimer">
+        <div class="modal-box">
+            <button class="modal-close" id="close-disclaimer" aria-label="Close">&times;</button>
+            <h2>Disclaimer</h2>
+
+            <h3>Unofficial Fan Project</h3>
+            <p>Ready or Not Guide is an independent, fan-created website. It is <strong>not</strong> officially associated with, sponsored by, or endorsed by VOID Interactive or any of its affiliates. All trademarks, service marks, trade names, and game content related to <em>Ready or Not</em> are the exclusive property of VOID Interactive.</p>
+
+            <h3>No Warranty</h3>
+            <p>All information on this website is provided "as is", without warranty of any kind, express or implied. We make no representations as to the accuracy, completeness, or suitability of any information on this site for any purpose.</p>
+
+            <h3>Game Content May Change</h3>
+            <p>Ready or Not is an actively developed title. Statistics, map layouts, weapon data, and mission details may change with game updates or patches. We cannot guarantee that the content on this site reflects the current state of the game at all times.</p>
+
+            <h3>External Links</h3>
+            <p>This site may contain links to external websites (e.g. official VOID Interactive social media). We have no control over the content or privacy practices of those sites and accept no responsibility for them.</p>
+
+            <h3>Limitation of Liability</h3>
+            <p>To the fullest extent permitted by law, the authors of this website shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of, or inability to use, the information provided on this site.</p>
+
+            <p class="modal-meta">Last updated: January 2026</p>
+        </div>
+    </div>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div class="cookie-banner" id="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <i class="fas fa-cookie-bite cookie-banner-icon"></i>
+                <div>
+                    <strong>We use cookies</strong>
+                    <p>This site uses third-party services (Google Fonts, Font Awesome) that may set cookies. We don't track you. Choose your preference below.</p>
+                </div>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="cookie-btn cookie-btn-manage" id="cookie-manage">Manage Cookies</button>
+                <button class="cookie-btn cookie-btn-decline" id="cookie-decline">Decline</button>
+                <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept All</button>
+            </div>
+        </div>
+    </div>
+
     <script>
+        /* --- Scroll indicator --- */
         const indicator = document.getElementById('scroll-indicator');
         const footer    = document.querySelector('.footer');
 
@@ -201,7 +349,82 @@
             indicator.style.opacity       = footerVisible ? '0' : '1';
             indicator.style.pointerEvents = footerVisible ? 'none' : 'auto';
         });
+
+        /* --- Modals --- */
+        const MODAL_IDS = ['modal-terms', 'modal-cookies', 'modal-privacy', 'modal-disclaimer'];
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+            /* Only restore scroll if no other modal is open */
+            if (!MODAL_IDS.some(mid => document.getElementById(mid).classList.contains('active'))) {
+                document.body.style.overflow = '';
+            }
+        }
+
+        /* Open triggers */
+        const modalTriggers = {
+            'open-terms':      'modal-terms',
+            'open-cookies':    'modal-cookies',
+            'open-privacy':    'modal-privacy',
+            'open-disclaimer': 'modal-disclaimer',
+            'privacy-open-cookies': 'modal-cookies'
+        };
+
+        Object.entries(modalTriggers).forEach(([triggerId, modalId]) => {
+            const el = document.getElementById(triggerId);
+            if (el) el.addEventListener('click', e => { e.preventDefault(); openModal(modalId); });
+        });
+
+        /* Close buttons */
+        ['close-terms', 'close-cookies', 'close-privacy', 'close-disclaimer'].forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) btn.addEventListener('click', () => closeModal('modal-' + id.replace('close-', '')));
+        });
+
+        /* Close on overlay click */
+        MODAL_IDS.forEach(id => {
+            document.getElementById(id).addEventListener('click', e => {
+                if (e.target === e.currentTarget) closeModal(id);
+            });
+        });
+
+        /* Close on Escape */
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') MODAL_IDS.forEach(closeModal);
+        });
+
+        /* --- Cookie consent banner --- */
+        const banner = document.getElementById('cookie-banner');
+
+        function hideBanner() {
+            banner.classList.add('cookie-banner--hidden');
+        }
+
+        /* Show banner if no choice has been stored yet */
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => banner.classList.add('cookie-banner--visible'), 600);
+        }
+
+        document.getElementById('cookie-accept').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            hideBanner();
+        });
+
+        document.getElementById('cookie-decline').addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            hideBanner();
+        });
+
+        document.getElementById('cookie-manage').addEventListener('click', () => {
+            openModal('modal-cookies');
+        });
     </script>
 </body>
 
 </html>
+
