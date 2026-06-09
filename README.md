@@ -482,7 +482,7 @@ Prvky: popisek "Floor 1 / Floor 2 / Floor 3", obrázek půdorysu,
 
 ```
 [ Desktop screenshot – weapons/Assault_Rifle/ARWC/index.html ]
-Prvky: titulek "ARWC" s červenou podtržítko linkou, popis zbraně,
+Prvky: titulek "ARN-180" s červenou podtržítko linkou, popis zbraně,
        tabulka statistik (caliber / RPM / Recoil / Capacity),
        fotografie zbraně (55% šířky), sekce "Recommended loadout"
        s ikonami příslušenství (optic, muzzle, grip, other)
